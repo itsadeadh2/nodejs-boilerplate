@@ -1,7 +1,8 @@
 // Express
-let app = require("express")()
+let app = require('express')()
+const routes = require('./routes')
 
 // Routes
-app.use("/", require("./routes"))
+app.use('/', routes)
 
 module.exports = app
