@@ -1,8 +1,6 @@
-const routes = require("express").Router()
-const HealthcheckRoutes = require("./healthcheck")
+const routes = require('express').Router()
+const HealthcheckRoutes = require('./healthcheck')
 
-routes.use('', [
-  HealthcheckRoutes
-])
+routes.use('', [HealthcheckRoutes])
 
 module.exports = routes
