@@ -1,0 +1,7 @@
+{
+  "extends": ["airbnb", "plugin:jest/recommended", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}
