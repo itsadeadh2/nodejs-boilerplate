@@ -1,7 +1,8 @@
 {
   "extends": ["airbnb", "plugin:jest/recommended", "plugin:security/recommended", "prettier"],
-  "plugins": ["prettier", "security"],
+  "plugins": ["prettier", "security", "no-unsafe-regex"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "no-unsafe-regex/no-unsafe-regex": 2
   }
 }
