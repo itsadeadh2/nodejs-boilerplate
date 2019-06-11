@@ -1,4 +1,4 @@
-const HealthCheckService = require("../services/healthcheck-service")
+const HealthCheckService = require('../services/healthcheck-service')
 
 const HealthCheckController = {
   async status(req, res) {

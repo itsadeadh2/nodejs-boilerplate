@@ -1,21 +1,21 @@
-const request = require("supertest")
+const request = require('supertest')
 
-const app = require("../../../app")
+const app = require('../../../app')
 
-describe("HealthCheck test", () => {
-  describe("GET /healthcheck", () => {
-    let res = undefined
+describe('HealthCheck test', () => {
+  describe('GET /healthcheck', () => {
+    let res
 
     beforeAll(async () => {
-      res = await request(app).get("/healthcheck")
+      res = await request(app).get('/healthcheck')
     })
 
-    it("should return 200", () => {
+    it('should return 200', () => {
       expect(res.status).toBe(200)
     })
 
     it("should return { status: 'ok' }", () => {
-      expect(res.body).toHaveProperty("status", "ok")
+      expect(res.body).toHaveProperty('status', 'ok')
     })
   })
 })
