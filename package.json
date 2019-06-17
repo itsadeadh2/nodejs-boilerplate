@@ -27,7 +27,7 @@
     "codecov": "./node_modules/.bin/codecov",
     "fmt": "./node_modules/.bin/prettier --write \"./**/*.js\" && ./node_modules/.bin/eslint --fix .",
     "fmt:check": "./node_modules/.bin/prettier --check \"./**/*.js\" && ./node_modules/.bin/eslint .",
-    "start": "node ",
+    "start": "node ./bin/www",
     "start:web": "node app.js",
     "test": "./node_modules/.bin/jest --coverage",
     "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",

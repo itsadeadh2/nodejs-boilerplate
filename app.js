@@ -1,7 +1,11 @@
 // Express
-const app = require('express')()
+const express = require('express')
+const routes = require('./routes')
+
+// Init express app
+const app = express()
 
 // Routes
-app.use('/', require('./routes'))
+app.use('/', routes)
 
 module.exports = app
