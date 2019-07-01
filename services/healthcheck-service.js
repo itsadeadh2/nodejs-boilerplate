@@ -1,8 +1,6 @@
 const HealthCheckService = {
   async status() {
-    return {
-      status: 'ok'
-    }
+    return Promise.resolve({ status: 'ok' })
   }
 }
 
