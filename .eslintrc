@@ -15,7 +15,7 @@
     "prettier/prettier": ["error"],
     "no-unsafe-regex/no-unsafe-regex": "error",
     "func-names": ["warn", "always", { "generators": "never" }],
-    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "no-underscore-dangle": "off",
     "camelcase": [
       "error",
       {
