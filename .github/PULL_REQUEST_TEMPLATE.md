@@ -14,7 +14,7 @@ Staging URL: [staging-url.app.io](staging-url.app.io)
 - Fix 1
 - Fix 2
 
-### Refac
+### Refacs
 - Refac 1
 - Refac 2
 
