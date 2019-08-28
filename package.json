@@ -24,20 +24,22 @@
     "supertest": "4.0.2"
   },
   "scripts": {
+    "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
     "codecov": "./node_modules/.bin/codecov",
+    "deps": "docker-compose up --build --force-recreate",
+    "eslint": "./node_modules/.bin/eslint --fix .",
+    "eslint:check": "./node_modules/.bin/eslint .",
+    "fix:<fix-name>": "node scripts/fix-<fix-name>.js",
     "fmt": "npm run prettier && npm run eslint",
     "fmt:check": "npm run prettier:check && npm run eslint:check",
     "prettier": "./node_modules/.bin/prettier --write \"**/{*.js,*.json,bin/**}\"",
     "prettier:check": "./node_modules/.bin/prettier --check \"**/{*.js,*.json,bin/**}\"",
-    "eslint": "./node_modules/.bin/eslint --fix .",
-    "eslint:check": "./node_modules/.bin/eslint .",
     "start": "node ./bin/www",
-    "start:web": "node app.js",
     "test": "./node_modules/.bin/jest --coverage",
+    "test:acceptance": "./node_modules/.bin/jest --coverage test/acceptance/*",
+    "test:integration": "./node_modules/.bin/jest --coverage test/integration/*",
     "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
-    "worker:<worker-name>": "node worker/<worker-name.js>",
-    "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
-    "fix:<fix-name>": "node scripts/fix-<fix-name>.js"
+    "worker:<worker-name>": "node worker/<worker-name.js>"
   },
   "repository": {
     "type": "git",
