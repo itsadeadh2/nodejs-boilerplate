@@ -4,7 +4,11 @@ Configurações
  - Entrar no CircleCi e ativar os builds para esse projeto
  - Conferir que os dados foram enviados ao codecov.io
 
+
 # Nome do Projeto
+
+[![CircleCI](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master)
+[![codecov](https://codecov.io/gh/b2wads/nodejs-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/b2wads/nodejs-boilerplate)
 
 Descrição breve sobre o projeto
 
@@ -15,15 +19,18 @@ Descrição breve sobre o projeto
 |:-------------:|:-------------------------|:------------:|
 | `B2WADS_PORT` | Porta padrã da aplicação |    `3000`    |
 
+
 # Como rodar
 ```sh
 npm start
 ```
 
+
 # Como rodar os testes
 ```sh
 npm test
 ```
+
 
 # Scripts
 - `cron:<cron-name>`: Inicia script de tarefa agendada
