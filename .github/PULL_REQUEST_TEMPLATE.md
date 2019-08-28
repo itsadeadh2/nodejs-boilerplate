@@ -22,3 +22,7 @@ Staging URL: [staging-url.app.io](staging-url.app.io)
 - [ ] Falta fazer ...
 - [ ] Implementar ...
 - [ ] Remover
+
+### PR's relacionadas
+- [#13](pr-link-13)
+- [#14](pr-link-13)
