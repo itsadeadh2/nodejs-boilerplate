@@ -15,9 +15,9 @@ Descrição breve sobre o projeto
 
 # Variáveis de ambiente
 
-|   Variável    |         Descrição         | Valor padrão |
-|:-------------:|:--------------------------|:------------:|
-| `B2WADS_PORT` | Porta padrão da aplicação |    `3000`    |
+|  Variável   |         Descrição         | Valor padrão |
+|:-----------:|:--------------------------|:------------:|
+| `NODE_PORT` | Porta padrão da aplicação |    `3000`    |
 
 
 # Como rodar
