@@ -17,7 +17,7 @@ jobs:
       - name: Install deps
         run: npm install
       - name: Limpa tree do git
-      - run: git remote rm origin
+        run: git remote rm origin
       - name: Roda todos os testes do projeto (unitários e integração)
         run: npm test
         
