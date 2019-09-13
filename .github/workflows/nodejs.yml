@@ -9,7 +9,7 @@ jobs:
   node-lts:
     runs-on: ubuntu-latest
     container:
-      image: node:lts-alpine
+      image: node:lts-jessie
       env: 
         NODE_ENV: test
     steps:
