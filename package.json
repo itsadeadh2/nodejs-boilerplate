@@ -35,10 +35,10 @@
     "prettier": "./node_modules/.bin/prettier --write \"**/{*.js,*.json,bin/**}\"",
     "prettier:check": "./node_modules/.bin/prettier --check \"**/{*.js,*.json,bin/**}\"",
     "start": "node ./bin/www",
-    "test": "./node_modules/.bin/jest --coverage",
-    "test:acceptance": "./node_modules/.bin/jest --coverage test/acceptance/*",
-    "test:integration": "./node_modules/.bin/jest --coverage test/integration/*",
-    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "test": "./node_modules/.bin/jest",
+    "test:acceptance": "./node_modules/.bin/jest test/acceptance/*",
+    "test:integration": "./node_modules/.bin/jest test/integration/*",
+    "test:unit": "./node_modules/.bin/jest test test/unit/*",
     "worker:<worker-name>": "node worker/<worker-name.js>"
   },
   "repository": {
