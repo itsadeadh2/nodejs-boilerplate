@@ -1,1 +1,5 @@
-module.exports = {testEnvironment: 'node', collectCoverage: true}
+module.exports = {
+  testEnvironment: 'node',
+  collectCoverage: true,
+  bail: true
+}
