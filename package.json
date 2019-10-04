@@ -7,7 +7,6 @@
     "express": "4.17.0"
   },
   "devDependencies": {
-    "codecov": "3.5.0",
     "eslint": "6.2.2",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "6.1.0",
@@ -25,7 +24,6 @@
   },
   "scripts": {
     "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
-    "codecov": "./node_modules/.bin/codecov",
     "deps": "docker-compose up --build --force-recreate",
     "eslint": "./node_modules/.bin/eslint --fix .",
     "eslint:check": "./node_modules/.bin/eslint .",
@@ -35,10 +33,10 @@
     "prettier": "./node_modules/.bin/prettier --write \"**/{*.js,*.json,bin/**}\"",
     "prettier:check": "./node_modules/.bin/prettier --check \"**/{*.js,*.json,bin/**}\"",
     "start": "node ./bin/www",
-    "test": "./node_modules/.bin/jest --coverage",
-    "test:acceptance": "./node_modules/.bin/jest --coverage test/acceptance/*",
-    "test:integration": "./node_modules/.bin/jest --coverage test/integration/*",
-    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "test": "./node_modules/.bin/jest --runInBand --forceExit",
+    "test:acceptance": "./node_modules/.bin/jest --runInBand --forceExit test/acceptance/*",
+    "test:integration": "./node_modules/.bin/jest --runInBand --forceExit test/integration/*",
+    "test:unit": "./node_modules/.bin/jest --runInBand --forceExit test/unit/*",
     "worker:<worker-name>": "node worker/<worker-name.js>"
   },
   "repository": {

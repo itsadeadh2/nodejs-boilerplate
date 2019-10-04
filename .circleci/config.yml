@@ -28,7 +28,7 @@ jobs:
       - all-tests
       - run:
           when: on_success
-          command: npm run codecov
+          command: bash <(curl -s https://codecov.io/bash)
   node11x:
       <<: *template
       docker:
