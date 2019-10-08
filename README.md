@@ -10,7 +10,7 @@
 [![CircleCI](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master)
 [![codecov](https://codecov.io/gh/b2wads/nodejs-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/b2wads/nodejs-boilerplate)
 
-Boilerplate para projetos NodeJS
+<< Descrição do projeto >>
   
 #  Variáveis de ambiente
 
